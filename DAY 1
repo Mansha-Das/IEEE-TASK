@@ -1,0 +1,37 @@
+1.What is the difference between em and rem units in CSS?
+em-   * font-size value of the parent element
+         * Used to change the scale relative to its parent's size.
+         *Can compound
+rem-   *font-size value of the root element (the <html> element)
+            * Used to maintain a consistent size throughout the document
+             *Cannot compound
+2) Explain  the concept of closures in JavaScript. Provide an example where a closure might be useful.
+It allows a function to access variables from its outer function  . 
+A closure is formed when a function is defined inside another function, and the inner function knows  the environment in which it was created.
+function createCounter() {
+  let count = 0; 
+  return function () {  
+    count++; 
+    console.log(count);
+  };
+}
+const counter = createCounter(); 
+counter(); 
+3. What are semantic HTML tags?
+A semantic tag describes their meaning and content to both the browser and the developer.
+<header>: Represents the header section of a page.
+<nav>: Represents links to other parts of the website or page.
+<main>: Represents the main content of the document.
+<aside>: Represents content that is tangentially related to the content around it.
+<footer>: Represents the footer of a page.
+<mark>: Represents text that is highlighted
+4. What is the purpose of the srcset attribute in the <img> tag?
+It provides a set of different images for different screen sizes, resolutions, and conditions.
+Two types:  Width descriptors (w): width of the image in pixels.
+Pixel density descriptors (x): Indicate the pixel density of the image
+
+
+
+
+
+                                                                                 
